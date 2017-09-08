@@ -84,7 +84,7 @@ footer {
 /* Estilos comentarios */
 
 .color {
-    background-color: rgba(245, 234, 244, 0.67);
+    background-color: rgba(245, 234, 244, 0.88);
     border-radius: 7px;
     padding: 3%;
     margin: 3%;
@@ -94,3 +94,10 @@ footer {
     background-color: antiquewhite;
     color: black;
 }
+
+#name,
+#clave,    
+#divs {
+    text-transform: capitalize;
+}
+
