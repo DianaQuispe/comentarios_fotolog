@@ -1,11 +1,12 @@
 body {
-    background-color: white;
-    color:black;
+    background-image: url(../img/fondo.jpg);
+    color: black;
 }
 
 header {
     margin-top: 20px;
 }
+
 img {
     width: 100%;
     margin-bottom: 30px;
@@ -20,15 +21,19 @@ a {
 #bannerflog img {
     height: 100px;
 }
-h1, p{
-    color: DeepPink ;
+
+h1,
+p {
+    color: DeepPink;
 }
-h1{
+
+h1 {
     font-size: 50px;
     font-weight: bolder;
 }
 
-textarea, input{
+textarea,
+input {
     width: 100%;
     border-radius: 0px;
     border: 1px solid DeepPink;
@@ -38,27 +43,36 @@ textarea, input{
 .posteo {
     color: DeepPink;
 }
-.posteo strong{
+
+.posteo strong {
     display: block;
 }
+
 .posteo hr {
     border: 1px solid DeepPink;
 }
+
+
 /* PARA CORAZON */
+
 .corazon {
     font-size: 40px;
     color: gray;
     text-align: center;
 }
+
 .rojo {
     color: red;
 }
-footer{
+
+footer {
     padding: 10px;
 }
 
+
 /* Estilos comentarios */
-.color  {
+
+.color {
     background-color: rgba(255, 0, 216, 0.37);
     border-radius: 7px;
     padding: 3%;
