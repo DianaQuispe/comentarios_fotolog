@@ -1,9 +1,9 @@
 /*aquí va tu código*/
-
+recoverData();
 function save() {
-    var nombre  = document.getElementById('name').value;
-    var clave  = document.getElementById('coment').value;
-    localStorage.setItem(nombre,clave);
+    var name  = document.getElementById('name').value;
+    var clave  = document.getElementById('clave').value;
+    localStorage.setItem(name,clave);
     //    localStorage.name = document.getElementById('name').value;
     //    localStorage.clave = document.getElementById('clave').value;
     //    localStorage.data = document.getElementById('divs');
@@ -12,17 +12,17 @@ function save() {
 }
 
 function recoverData() {
-    save() ;
-    for(var i =0; i<sessionStorage.length; i++) {
+    document.getElementById('data').innerHTML = "";
+    for(var i =0; i<localStorage.length; i++) {
 
-        var nombre = sessionStorage.key(i);
-        var clave = sessionStorage.getItem(name);
+        var name = localStorage.key(i);
+        var clave = localStorage.getItem(name);
         var divs = document.createElement('div');
         divs.setAttribute('id', 'divs');
         divs.className = 'color';
 
         var  nombre = document.createElement('h3');
-        var texto1 = document.createTextNode(nombre);
+        var texto1 = document.createTextNode(name);
         nombre.appendChild(texto1);
 
         var comentario  = document.createElement('p');
@@ -43,14 +43,22 @@ function recoverData() {
 }
 function coment()  {
     if (typeof(Storage) !== "undefined") {
+        save();
+        recoverData();
+        document.getElementById("name").value = "";
+        document.getElementById("clave").value = "";
         // Store
-        localStorage.setItem(nombre, comentario);
+        // localStorage.setItem("lastname", "Smith");
         // Retrieve
-        document.getElementById("result").innerHTML = localStorage.getItem("lastname");
     } else {
-        document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+        document.getElementById("data").innerHTML = "Sorry, your browser does not support Web Storage...";
     }
+
+
+
 }
 function cleanData() {
+    document.getElementById("data").innerHTML = "";
 
+    localStorage.clear();
 }
