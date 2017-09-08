@@ -1,5 +1,5 @@
 body {
-    background-image: url(../img/fondo.jpg);
+    background-image: url(../img/fondo2.jpg);
     color: black;
 }
 
@@ -10,6 +10,10 @@ header {
 img {
     width: 100%;
     margin-bottom: 30px;
+}
+
+.redond {
+    border-radius: 12px;
 }
 
 a {
@@ -24,7 +28,7 @@ a {
 
 h1,
 p {
-    color: DeepPink;
+    color: #2f1780;
 }
 
 h1 {
@@ -36,7 +40,7 @@ textarea,
 input {
     width: 100%;
     border-radius: 0px;
-    border: 1px solid DeepPink;
+    border: 5px solid #0a0407;
     margin-bottom: 20px;
 }
 
@@ -69,11 +73,16 @@ footer {
     padding: 10px;
 }
 
+.box {
+    background-color: rgba(18, 3, 3, 0.34);
+    border-radius: 12px;
+}
+
 
 /* Estilos comentarios */
 
 .color {
-    background-color: rgba(255, 0, 216, 0.37);
+    background-color: rgba(245, 234, 244, 0.67);
     border-radius: 7px;
     padding: 3%;
     margin: 3%;
