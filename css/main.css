@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Saira+Semi+Condensed');
 body {
     background-image: url(../img/fondo2.jpg);
     color: black;
+    font-family: 'Saira Semi Condensed', sans-serif;
 }
 
 header {
@@ -86,4 +88,9 @@ footer {
     border-radius: 7px;
     padding: 3%;
     margin: 3%;
+}
+
+#dogs {
+    background-color: antiquewhite;
+    color: black;
 }
